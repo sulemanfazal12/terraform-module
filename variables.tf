@@ -8,6 +8,7 @@ variable "vpc_tags" {
   type    = map(string)
   default = {
     Name = "MyVPC"
+    
   }
 }
 
@@ -19,7 +20,7 @@ variable "cidr_block" {
 variable "subnet_name" {
   type = map(string)
   default = {
-    "Name" = "tf-subnet"
+    Name = "tf-subnet"
   }
   
 }
@@ -28,7 +29,7 @@ variable "subnet_name" {
 variable "sg_name" {
   type = map(string)
   default = {
-    "Name" = "tf-sg"
+    Name = "tf-sg"
   }
   
 }
@@ -37,7 +38,7 @@ variable "sg_name" {
 variable "nic_name" {
   type = map(string)
   default = {
-    "Name" = "Primary-interface"
+     Name = "Primary-interface"
   }
   
 }
@@ -51,7 +52,7 @@ variable "pri_ip" {
 variable "ec2_name" {
   type = map(string)
   default = {
-    "Name" = "tf-instance"
+    Name = "tf-instance"
   }
   
 }
